@@ -14,7 +14,16 @@ import javax.persistence.ManyToMany;
 
 @Entity
 public class Programmer {
+	
+	
 
+	public Programmer(int id, String name, int salary, Set<Project> projects) {
+		
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		this.projects = projects;
+	}
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
