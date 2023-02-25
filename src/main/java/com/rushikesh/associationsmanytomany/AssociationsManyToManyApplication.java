@@ -7,7 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AssociationsManyToManyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AssociationsManyToManyApplication.class, args);
+		ApplicationContext context = SpringApplication.run(AssociationsManyToManyApplication.class, args);
+	
+	ProgrammerRepository repo   =	context.getBean(ProgrammerRepository.class);
+
+
+		
 	}
 
 }
