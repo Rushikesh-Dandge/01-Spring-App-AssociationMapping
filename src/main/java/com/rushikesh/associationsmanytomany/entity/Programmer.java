@@ -14,7 +14,11 @@ import javax.persistence.ManyToMany;
 
 @Entity
 public class Programmer {
-	
+
+	public Programmer(){
+
+
+	}	
 	
 
 	public Programmer(int id, String name, int salary, Set<Project> projects) {
