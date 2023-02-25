@@ -15,10 +15,10 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Programmer {
 
-	public Programmer(){
+	//Sorry Sujata
 
 
-	}	
+	
 	
 
 	public Programmer(int id, String name, int salary, Set<Project> projects) {
