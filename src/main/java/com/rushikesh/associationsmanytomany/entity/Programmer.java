@@ -15,12 +15,6 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Programmer {
 
-	public Programmer(){
-
-
-	}	
-	
-
 	public Programmer(int id, String name, int salary, Set<Project> projects) {
 		
 		this.id = id;
@@ -28,6 +22,16 @@ public class Programmer {
 		this.salary = salary;
 		this.projects = projects;
 	}
+
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(AssociationsManyToManyApplication.class, args);
+	
+	ProgrammerRepository repo   =	context.getBean(ProgrammerRepository.class);
+
+     Programmer p = new Programmer();
+     p.setName("Sujata");
+     p.setSalary(450000000);
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
