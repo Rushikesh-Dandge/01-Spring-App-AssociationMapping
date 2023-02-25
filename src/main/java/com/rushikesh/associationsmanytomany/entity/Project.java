@@ -10,6 +10,13 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Project {
 
+
+	public Project(){
+	
+
+	}
+
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
